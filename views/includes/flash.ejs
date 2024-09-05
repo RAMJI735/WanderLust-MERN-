@@ -1,0 +1,16 @@
+<%if(msg && msg.length){%>
+
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= msg %>
+      </div>
+    <%}%>
+
+    <!-- we right this code in if statement because after applying bootstrap styling a blank line always show evenif msg not displayed so solve this we covered the code in if statement as in msg message sends in array so if have msg(always have aaray but arrays can be empty so ) + array.length then print this line -->
+    <%if(err && err.length){%>
+
+        <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+            <%= err %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <%}%>
+    
